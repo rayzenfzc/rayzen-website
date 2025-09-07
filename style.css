@@ -1,0 +1,163 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 2rem 1rem 1rem 1rem;
+  background: #fff;
+}
+
+.logo {
+  max-width: 90px;
+  margin-bottom: 1rem;
+}
+
+.category {
+  color: #666;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+/* Cover Banner */
+.cover-image {
+  width: 100%;
+  max-height: 340px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.cover-image img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 340px;
+  display: block;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+h1, h2 {
+  font-weight: 700;
+  color: #181818;
+}
+
+.about, .mission, .services, .contact, .form-section {
+  background: #f8f8f8;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* About and Mission layout with image */
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+.section-image {
+  flex: 1 1 180px;
+  max-width: 250px;
+}
+.section-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.section-text {
+  flex: 2 1 300px;
+  min-width: 220px;
+}
+
+.services .service {
+  margin-bottom: 1.2rem;
+}
+.services h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.3rem;
+  color: #222;
+  font-size: 1.08rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  margin-bottom: 0.75rem;
+}
+
+.social {
+  margin-top: 1rem;
+}
+.social a {
+  display: inline-block;
+  margin-right: 16px;
+  color: #222;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+.social a:hover {
+  color: #0077ff;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.form-section input,
+.form-section textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+.form-section button {
+  padding: 0.75rem;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.form-section button:hover {
+  background: #444;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #f4f4f4;
+  color: #888;
+  font-size: 0.95rem;
+  margin-top: 2rem;
+}
+
+/* Responsive for mobile */
+@media (max-width: 700px) {
+  .section-content {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  .cover-image {
+    max-height: 180px;
+  }
+}
